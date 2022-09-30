@@ -97,7 +97,9 @@ scene.add(Cylinder);
 Cylinder.position.y = -3;
 line4.position.y = -3;
 
-//DragControls
+//---------------------------------DragControls
+
+const controls = new THREE.DragControls( [Cylinder,torus,capsule,cube,line,line2,line3,line4], camera, renderer.domElement );
 
 /* const dControls = new THREE.DragControls([cube, camera, renderer.domElement]);
 dControls.deactivate();
